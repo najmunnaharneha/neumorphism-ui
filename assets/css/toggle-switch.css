@@ -62,3 +62,24 @@ input[type="checkbox"]:checked::before {
 input[type="checkbox"]:checked::after {
    background-color: #67da25;
 }
+
+@media (max-width: 767px) {
+   .container {
+      height: 80px;
+      width: 200px;
+   }
+   input[type="checkbox"] {
+      height: 60px;
+      width: 120px;
+   }
+   input[type="checkbox"]::before {
+      width: 30px;
+      height: 30px;
+   }
+   input[type="checkbox"]:checked::before {
+      left: 66px;
+   }
+   input[type="checkbox"]::after {
+      right: -45px;
+   }
+}

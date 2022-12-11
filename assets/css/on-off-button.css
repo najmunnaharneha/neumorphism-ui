@@ -35,4 +35,12 @@ input[type="checkbox"]:checked::after {
    color: #67da25;
 }
 
-
+@media (max-width: 767px) {
+   input[type="checkbox"] {
+      height: 140px;
+      width: 140px;
+   }
+   input[type="checkbox"]::after {
+      font-size: 50px;
+   }
+}
